@@ -63,7 +63,9 @@ hr {
   border: none;
   border-bottom: solid 1px var(--light-gray);
 }
-
+ table {
+  font-size: 16px;
+ }
 
 /*====== Main Header ======*/
 .main-header {
@@ -459,4 +461,104 @@ textarea.form-input {
     width: 95%;
     margin: auto;
   }
+}
+
+/* ESTILO DE LOS BOTONES DE LA LISTA DE PRODUCTOS */
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* primary */
+.btn-primary {
+  color: #fff;
+  background-color: green;
+  border-color: green;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: yellowgreen;
+  border-color: yellowgreen;
+}
+
+/* secondary */
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+}
+/* success */
+.btn-success {
+  color: #fff;
+  background-color: goldenrod;
+  border-color: goldenrod;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: gold;
+  border-color: gold;
+}
+
+/* danger */
+.btn-danger {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+.btn-danger:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+/* info */
+.btn-info {
+  color: #000;
+  background-color: green;
+  border-color: green;
+}
+.btn-info:hover {
+  color: #000;
+  background-color: yellowgreen;
+  border-color: yellowgreen;
+}
+
+.align-center {
+  text-align: center;
+}
+.search-form {
+  border: none;
+  outline: none;
+}
+.search-form input:focus {
+  outline: none;
+}
+.d-inline {
+  display: inline;
+}
+#ojito {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  font-size: 15px;
+}
+.position-re {
+  position: relative;
 }

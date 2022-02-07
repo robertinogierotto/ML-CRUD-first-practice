@@ -11,7 +11,10 @@ const controller = {
 	index: (req, res) => {
 		res.render ('products', {products: products})
 	},
-
+	// List, show list of products
+	list: (req, res) => {
+		res.render ('product-list', {products: products})
+	},
 	// Detail - Detail from one product
 	detail: (req, res) => {
         const productParaEnviar = products.find( producto => producto.id == req.params.id)
