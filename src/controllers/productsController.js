@@ -28,8 +28,25 @@ const controller = {
 	
 	// Create -  Method to store
 	store: (req, res) => {
-		res.send (req.body)
+
+		let newProduct = { 
+
+			id: products[products.length - 1].id + 1,
+			name: req.body.name,
+			price: req.body.price,
+			discount: req.body.discount,
+			category: req.body.category,
+			description: req.body.name,
+			image: req.file.filename,
+		 }
+		products.push (newProduct);
+		let productsJSON = JSON.stringify (products);
+		fs.writeFileSync(productsFilePath, productsJSON);
+
+		res.redirect ('/')
+
 	},
+	
 
 	// Update - Form to edit
 	edit: (req, res) => {
